@@ -1,0 +1,182 @@
+
+    <!doctype html>
+    <html lang="en">
+      <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+       <link rel="stylesheet" href="../../css/bootstrap.min.css">
+        <title>Dashboard</title>
+
+      </head>
+      <body>
+
+    <nav class="navbar navbar-expand-lg  navbar-dark bg-dark px-4 " style="opacity: 0.95;">
+        <div class="container px-4" style="opacity: 1;">
+          <a class="navbar-brand ms-4 ps-4" href="#">Dashboard</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse me-4 pe-4" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="posts.html">Posts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="new_post.html">New post</a>
+              </li>
+
+            </ul>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-person-fill" viewBox="0 0 16 16">
+                            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                          </svg>  Welcome Yossef
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="signin.html">Logout</a>
+                      </li>
+
+              </ul>
+          </div>
+        </div>
+      </nav>
+<section class="top bg-primary py-4 px-5 text-white">
+    <div class="container">
+        <div class="row">
+<div class="col-auto">
+    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="white" class="bi bi-pencil" viewBox="0 0 16 16">
+        <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+      </svg>
+
+</div>
+<div class="col-auto">
+    <h1 class="display-5 fw-bold">
+        Dashboard
+    </h1>
+</div>
+        </div>
+
+    </div>
+</section>
+<section class="search bg-light">
+    <div class="container my-4">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row justify-content-end">
+<div class="   col-md-4 ms-3">
+    <div class="input-group mb-3">
+
+        <input type="text" class="form-control" placeholder="Search" aria-label="Username" aria-describedby="basic-addon1">
+        <button class="input-group-text bg-primary text-white " id="basic-addon1">Submit</button>
+      </div>
+
+</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="posts">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-9">
+
+
+        <div class="table-responsive">
+
+  <table class="table table-striped">
+      <h3 class="bg-light p-3">
+Latest posts
+      </h3>
+    <thead>
+      <tr class="bg-dark text-white">
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+        <td>
+            <a href="post.html" class="btn btn-secondary ">&Rarr; Details</a>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+        <td>
+            <a href="#" class="btn btn-secondary ">&Rarr; Details</a>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td colspan="2">Larry the Bird</td>
+        <td>@twitter</td>
+        <td>
+            <a href="#" class="btn btn-secondary ">&Rarr; Details</a>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+        <td>
+            <a href="#" class="btn btn-secondary ">&Rarr; Details</a>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+        <td>
+            <a href="#" class="btn btn-secondary ">&Rarr; Details</a>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td colspan="2">Larry the Bird</td>
+        <td>@twitter</td>
+        <td>
+            <a href="#" class="btn btn-secondary ">&Rarr; Details</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+        </div>
+    </div>
+
+</div>
+        </div>
+</section>
+<footer class="bg-dark py-5">
+    <p class="text-center lead text-muted">
+        Copyright &copy; 2020
+    </p>
+</footer>
+    <script src="../../js/bootstrap.bundle.min.js"></script>
+    </body>
+    </html>
